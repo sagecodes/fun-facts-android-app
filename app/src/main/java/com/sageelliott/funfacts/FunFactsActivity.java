@@ -17,6 +17,7 @@ public class FunFactsActivity extends AppCompatActivity {
 
         // Assign the Views from the layout file to the corresponding variables
         mFactTextView = (TextView) findViewById(R.id.factTextView);
+        mShowFactButton = (Button) findViewById(R.id.showFactButton);
 
 
     }
