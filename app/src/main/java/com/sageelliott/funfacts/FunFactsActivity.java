@@ -24,6 +24,8 @@ public class FunFactsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // the button was clicked, so update fact text view with new fact
+                String fact = "Ostritches can run faster than horses";
+                mFactTextView.setText(fact);
             }
         };
         mShowFactButton.setOnClickListener(listener);
