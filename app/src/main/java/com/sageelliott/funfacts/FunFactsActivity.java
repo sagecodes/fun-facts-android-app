@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class FunFactsActivity extends AppCompatActivity {
     // declare our view variable
     private TextView mFactTextView;
@@ -24,7 +26,13 @@ public class FunFactsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // the button was clicked, so update fact text view with new fact
-                String fact = "Ostritches can run faster than horses";
+                String fact = "";
+                // Randomly select a fact
+                Random randomGenerator = new Random();
+                int randomNumber = randomGenerator.nextInt(3);
+                fact = randomNumber + "";
+
+                // Update the screen with dynamic fact
                 mFactTextView.setText(fact);
             }
         };
